@@ -35,21 +35,24 @@ h6 {
 
 hr.star-light,
 hr.star-primary {
+    border: 150px;
+    border-right-style: solid;
+    border-left-style: solid;
+
     margin: 25px auto 30px;
-    padding: 0;
-    max-width: 250px;
-    border: 0;
-    border-top: solid 5px;
+    padding:3px;
+    max-width: 40px;
+
     text-align: center;
     overflow: visible;
 }
 
 hr.star-light:after,
 hr.star-primary:after {
-    content: "\f005";
+    content: "\f055";
     display: inline-block;
     position: relative;
-    top: -.8em;
+    top: -.7em;
     padding: 0 .25em;
     font-family: FontAwesome;
     font-size: 2em;
@@ -59,18 +62,12 @@ hr.star-light {
     border-color: #fff;
 }
 
-hr.star-light:after {
-    color: #fff;
-    background-color: #{{ site.color.primary }};
-}
 
-hr.star-primary {
-    border-color: #{{ site.color.secondary }};
-}
 
 hr.star-primary:after {
     color: #{{ site.color.secondary }};
     background-color: #fff;
+
 }
 
 .img-centered {
@@ -128,6 +125,71 @@ header .intro-text .skills {
     header .intro-text .skills {
         font-size: 1.75em;
     }
+}
+
+.about-intro {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.progress {
+    height: 6px;
+    box-shadow: none;
+    background: #f2f3f7;
+    overflow: visible; }
+
+.progress-bar {
+    background: #2c98f0;
+    box-shadow: none;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #000;
+    font-weight: 600;
+    text-align: right;
+    position: relative;
+    overflow: visible;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.progress-bar:after {
+    position: absolute;
+    top: -2px;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    content: '';
+    background: #2c98f0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.progress-bar span {
+    position: absolute;
+    top: -22px;
+    right: 0;
+}
+
+.row {
+text-align: center;
+}
+
+.skill-icon{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.container .skill-icon {
+    width: 100px;
+    display: inline-block;
+}
+.container .skill-icon .img-responsive{
+    display: inline-block;
+    margin: 50px 0;
 }
 
 @media(min-width:768px) {
@@ -189,6 +251,7 @@ section h2 {
 section.success {
     background: white;
 }
+
 
 @media(max-width:767px) {
     section {
