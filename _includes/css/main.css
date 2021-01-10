@@ -4,9 +4,6 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-body {
-    overflow-x: hidden;
-}
 
 p {
     font-size: 20px;
@@ -80,10 +77,18 @@ hr.star-primary:after {
     margin: 0 auto;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 header {
     text-align: center;
     color: #fff;
-    background: #{{ site.color.primary }};
+    background:url("../img/1.png") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
 }
 
 header .container {
@@ -102,6 +107,7 @@ header .intro-text .name {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 2em;
     font-weight: 700;
+    padding-top: 150px;
 }
 
 header .intro-text .skills {
@@ -181,8 +187,7 @@ section h2 {
 }
 
 section.success {
-    color: #fff;
-    background: #{{ site.color.primary }};
+    background: white;
 }
 
 @media(max-width:767px) {
@@ -295,6 +300,10 @@ section.success {
     border: solid 2px #fff;
     color: #{{ site.color.primary }};
     background: #fff;
+}
+
+.skill {
+    background: #{{ site.color.primary }};
 }
 
 .floating-label-form-group {

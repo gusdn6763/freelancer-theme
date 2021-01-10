@@ -1,17 +1,11 @@
 # Site settings
-title: Freelancer
-email: your-email@domain.com
-url: https://github.com/jeromelachaud/freelancer-theme
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-keywords: "your keywords, separated by commas"
-skills: "Web Developer - Graphic Artist - User Experience Designer"
-meta_author: LastName FirstName
-
-# Google webmaster tools
-google_verify:
-
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:
+title: HyeonWoo Jang
+email: gusdn6763@gmail.com
+url: https://gusdn6763.github.io
+description: "Beginner GameDeveloper Portfolio"
+keywords: "Game developer, Unity"
+skills: "스스로 할 줄 아는 신입 게임 개발자"
+meta_author: JangHyeonWoo
 
 # Contact form:
 # - static : pass through formspree.io to validate email sending
@@ -25,47 +19,33 @@ disqus_shortname: myshortname
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: 18bc9c #80B3FF
-  primary-rgb: "24,288,156" #"128,179,255"
-  secondary: 2c3e50 #FD6E8A
-  secondary-dark: 233140 #A2122F
+  primary: 87EBE8 #80B3FF
+  primary-rgb: "135,235,232" #"128,179,255"
+  secondary: 2c3e50  #주요 색상
+  secondary-dark: 3F89FA  #맨아래
 
 # Footer settings
 footer:
-  copyright: Dr. Henry Jekyll
+  copyright: HyeonWoo Jang
   location: Location
   social: Around the Web
-  credits: Credits
-
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-social:
-  - title: twitter
-    url: http://twitter.com/jekyllrb
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket
-    url: http://bitbucket.org/jekyll
-  - title: github
-    url: http://github.com/jekyll
+  credits: contact
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+  - line: Seoul Guro
+  - line:
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: youtube
+    url: https://www.youtube.com/channel/UCdzs19ZSqefC8xo1e98nCPA/videos
+  - title: github
+    url: http://github.com/gusdn6763
 
 # Credits content
-credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
+credits: 010-9378-6763
 
 # Build settings
 markdown: kramdown
 permalink: pretty
-
-#for posts
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      permalink: ""
