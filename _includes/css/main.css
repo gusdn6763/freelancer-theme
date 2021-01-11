@@ -132,10 +132,14 @@ header .intro-text .skills {
 }
 
 .progress {
-    height: 6px;
     box-shadow: none;
-    background: #f2f3f7;
-    overflow: visible; }
+    overflow: visible;
+    position: absolute;
+    width: 100px;
+    height: 6px;
+    margin-top: 150px;
+}
+
 
 .progress-bar {
     background: #2c98f0;
@@ -195,11 +199,7 @@ text-align: center;
     height: 100px;
 }
 
-.progress {
-    position: absolute;
-    width: 100px;
-    margin-top: 150px;
-}
+
 
 
 @media(min-width:768px) {
@@ -349,13 +349,6 @@ section.success {
       max-width: 32%;
     }
   }
-  /* A large grid might need four columns on widescreen layouts */
-  /* @media (min-width: 1380px) {
-    .portfolio-flex-grid .portfolio-flex-row .portfolio-flex-item {
-      flex: 1 0 23.5%;
-      max-width: 23.5%;
-    }
-  } */
 
 .btn-outline {
     margin-top: 15px;
