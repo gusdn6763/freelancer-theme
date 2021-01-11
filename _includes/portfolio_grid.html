@@ -9,8 +9,9 @@
                 </div>
             </div>
             <div class="portfolio-flex-row">
-                {% for post in site.posts %}
-                    <div class="portfolio-flex-item portfolio-item">
+                {% assign post1 = site.categories.Portfolio  | sort:"order" %}
+                {% for post in post1 %}
+                <div class="portfolio-flex-item portfolio-item">
                         <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
@@ -37,7 +38,8 @@
                 </div>
             </div>
             <div class="portfolio-flex-row">
-                {% for post in site.posts %}
+                {% assign post2 = site.categories.Study  | sort:"order" %}
+                {% for post in post2 %}
                 <div class="portfolio-flex-item portfolio-item">
                     <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
@@ -45,7 +47,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
+                        <img src="img/Study/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
                     </a>
                 </div>
                 {% endfor %}

@@ -49,7 +49,7 @@ hr.star-primary {
 
 hr.star-light:after,
 hr.star-primary:after {
-    content: "\f055";
+    content: "\f005";
     display: inline-block;
     position: relative;
     top: -.7em;
@@ -59,7 +59,7 @@ hr.star-primary:after {
 }
 
 hr.star-light {
-    border-color: #fff;
+
 }
 
 
@@ -178,19 +178,34 @@ header .intro-text .skills {
 text-align: center;
 }
 
-.skill-icon{
-    text-align: center;
-    margin: 0 auto;
+.container .skill-icon {
+
 }
 
-.container .skill-icon {
+.skill-icon {
+    margin-top: 30px;
+    display: flex;
+    height:150px;
+    text-align: left;
+}
+
+.skill-icon img {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.skill-icon p {
+    font-size: 17px;
+    margin-top: 20px;
+    height: 100px;
+}
+
+.progress {
+    position: absolute;
     width: 100px;
-    display: inline-block;
+    margin-top: 150px;
 }
-.container .skill-icon .img-responsive{
-    display: inline-block;
-    margin: 50px 0;
-}
+
 
 @media(min-width:768px) {
     .navbar-fixed-top {
