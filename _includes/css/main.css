@@ -83,7 +83,6 @@ header {
     color: #fff;
     background:url("../img/1.png") no-repeat;
     background-size: cover;
-    background-position: center;
     width: 100vw;
     height: 100vh;
 }
@@ -176,10 +175,6 @@ header .intro-text .skills {
 
 .row {
 text-align: center;
-}
-
-.container .skill-icon {
-
 }
 
 .skill-icon {
