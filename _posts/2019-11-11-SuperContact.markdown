@@ -2,7 +2,7 @@
 layout: default
 modal-id: 3
 date: 2019-11-11
-img1: SuperContact1.png
+img: SuperContact1.png
 alt: image-alt
 project-date: 2019-11-11
 client: Start Bootstrap

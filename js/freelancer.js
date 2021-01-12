@@ -35,3 +35,12 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+$(document).ready(function () {
+
+    $('.bxslider').bxSlider({ // 클래스명 주의!
+
+
+    });
+
+});
