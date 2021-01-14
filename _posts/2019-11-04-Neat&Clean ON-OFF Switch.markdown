@@ -3,6 +3,7 @@ layout: default
 modal-id: 1
 date: 2019-11-04
 slide: 4
+size: hor
 img: Switch1.png
 slide-img: Switch
 alt: image-alt
