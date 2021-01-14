@@ -22,14 +22,14 @@
                                 {% assign img_count = {{post.slide}} %}
                                 {% for i in (1..img_count) %}
                                 {% if post.size == "hor" %}
-                                <div class="hor"><img src="../img/Portfolio/{{ post.slide-img }}{{i}}.png" alt="{{ post.alt }}"></div>
+                                <div class="hor"><img src="../img/portfolio_img/{{ post.slide-img }}{{i}}.png" alt="{{ post.alt }}"></div>
                                 {% else %}
-                                <div class="ver"><img src="../img/Portfolio/{{ post.slide-img }}{{i}}.png" alt="{{ post.alt }}"></div>
+                                <div class="ver"><img src="../img/portfolio_img/{{ post.slide-img }}{{i}}.png" alt="{{ post.alt }}"></div>
                                 {% endif %}
                                 {% endfor %}
                             </div>
                             {% else %}
-                            <img src="../img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                            <img src="../img/portfolio_img/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
                             {% endif %}
                             <!-- 추가된 내용 -->
                             {% if post.description %}
@@ -108,7 +108,7 @@
                      <div class="modal-body">
                          <h2>{{ post.title }}</h2>
                          <hr class="star-primary">
-                         <img src="../img/study/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                         <img src="../img/learning_img/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
                          {% if post.description %}
                          <p>{{ post.description }}</p>
                          {% endif %}
