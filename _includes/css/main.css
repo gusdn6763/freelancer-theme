@@ -58,11 +58,6 @@ hr.star-primary:after {
     font-size: 2em;
 }
 
-hr.star-light {
-
-}
-
-
 
 hr.star-primary:after {
     color: #{{ site.color.secondary }};
