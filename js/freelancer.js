@@ -48,16 +48,19 @@ $('#portfolio-link').on('show', function (e) {
 
 $(document).ready(function () {
     var sliders = new Array();
+
     $('.bxslider').each(function(i, slider) {
         sliders[i] = $(slider).bxSlider();
     });
 
     $('.portfolio-link').click(function() {
         $.each(sliders, function(i, slider) {
-
             slider.destroySlider();
             setTimeout(function(){
-                slider.reloadSlider();
+                slider.reloadSlider(
+                    {
+                    }
+                );
             },200);
 
         });

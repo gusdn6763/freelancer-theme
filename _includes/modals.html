@@ -1,0 +1,194 @@
+ <!-- Portfolio Modals -->
+ {% for post in site.categories.Portfolio %}
+    <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>{{ post.title }}</h2>
+                            <hr class="star-primary">
+                            <!-- 추가된 내용 -->
+                            {% if post.slide %}
+                            {% if post.size == "hor" %}
+                            <div class="bxslider">
+                                {% assign img_count = {{post.slide}} %}
+                                {% for i in (1..img_count) %}
+                                <img src="../img/portfolio_img/{{ post.slide-img }}{{i}}.png" alt="{{ post.alt }}">
+                                {% endfor %}
+                            </div>
+                            {% else %}
+                            <div class="bxslider" id = "ver">
+                                {% assign img_count = {{post.slide}} %}
+                                {% for i in (1..img_count) %}
+                                <img src="../img/portfolio_img/{{ post.slide-img }}{{i}}.png" alt="{{ post.alt }}">
+                                {% endfor %}
+                            </div>
+                            {% endif %}
+                            {% else %}
+                            <img src="../img/portfolio_img/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                            {% endif %}
+                            <!-- 추가된 내용 -->
+                            {% if post.description %}
+                                <p>{{ post.description }}</p>
+                            {% endif %}
+                            <ul class="list-inline item-details">
+                                {% if post.skills %}
+                                    <li>Client:
+                                        <strong><a href="http://startbootstrap.com">{{ post.skills }}</a>
+                                        </strong>
+                                    </li>
+                                {% endif %}
+                                {% if post.project-date %}
+                                    <li>Date:
+                                        <strong><a href="http://startbootstrap.com">{{ post.project-date }}</a>
+                                        </strong>
+                                    </li>
+                                {% endif %}
+                                {% if post.category %}
+                                    <li>Service:
+                                        <strong><a href="http://startbootstrap.com">{{ post.category }}</a>
+                                        </strong>
+                                    </li>
+                                {% endif %}
+                            </ul>
+                            <!-- 추가된 내용 -->
+                            {% if post.github %}
+                            <button type="button"
+                                    class="btn btn-default"
+                                    onclick="location.href='{{ post.github }}'">
+                                <i class="fa fa-bookmark"></i> Github Storage</button>
+                            {% endif %}
+
+                            {% if post.youtube1 %}
+                            <button type="button"
+                                    class="btn btn-default"
+                                    onclick= "window.open('{{ post.youtube1 }}')">
+                                <i class="fa fa-bookmark"></i> youtube1</button>
+                            {% endif %}
+
+                            {% if post.youtube2 %}
+                            <button type="button"
+                                    class="btn btn-default"
+                                    onclick="location.href='{{ post.youtube2 }}'">
+                                <i class="fa fa-bookmark"></i> youtube2</button>
+                            {% endif %}
+
+                            {% if post.unity %}
+                            <button type="button"
+                                    class="btn btn-default"
+                                    onclick="location.href='{{ post.unity }}'">
+                                <i class="fa fa-bookmark"></i> unity Asset </button>
+                            {% endif %}
+                            <!-- 추가된 내용 -->
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+
+
+
+ {% for post in site.categories.Study %}
+ <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+     <div class="modal-content">
+         <div class="close-modal" data-dismiss="modal">
+             <div class="lr">
+                 <div class="rl">
+                 </div>
+             </div>
+         </div>
+
+         <div class="container">
+             <div class="row">
+                 <div class="col-lg-8 col-lg-offset-2">
+                     <div class="modal-body">
+                         <h2>{{ post.title }}</h2>
+                         <hr class="star-primary">
+                         <!-- 추가된 내용 -->
+                         {%if post.slide %}
+                         <div class="bxslider">
+                             {% assign img_count = {{post.slide}} %}
+                             {% for i in (1..img_count) %}
+                             {% if post.size == "hor" %}
+                             <div class="hor"><img src="../img/learning_img/{{ post.slide-img }}{{i}}.png" alt="{{ post.alt }}"></div>
+                             {% else %}
+                             <div class="ver"><img src="../img/learning_img/{{ post.slide-img }}{{i}}.png" alt="{{ post.alt }}"></div>
+                             {% endif %}
+                             {% endfor %}
+                         </div>
+                         {% else %}
+                         <img src="../img/learning_img/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                         {% endif %}
+                         <!-- 추가된 내용 -->
+                         {% if post.description %}
+                         <p>{{ post.description }}</p>
+                         {% endif %}
+                         <ul class="list-inline item-details">
+                             {% if post.skills %}
+                             <li>Client:
+                                 <strong><a href="http://startbootstrap.com">{{ post.skills }}</a>
+                                 </strong>
+                             </li>
+                             {% endif %}
+                             {% if post.project-date %}
+                             <li>Date:
+                                 <strong><a href="http://startbootstrap.com">{{ post.project-date }}</a>
+                                 </strong>
+                             </li>
+                             {% endif %}
+                             {% if post.category %}
+                             <li>Service:
+                                 <strong><a href="http://startbootstrap.com">{{ post.category }}</a>
+                                 </strong>
+                             </li>
+                             {% endif %}
+                         </ul>
+                         <!-- 추가된 내용 -->
+                         {% if post.github %}
+                         <button type="button"
+                                 class="btn btn-default"
+                                 onclick="location.href='{{ post.github }}'">
+                             <i class="fa fa-bookmark"></i> Github Storage</button>
+                         {% endif %}
+
+                         {% if post.youtube1 %}
+                         <button type="button"
+                                 class="btn btn-default"
+                                 onclick= "window.open('{{ post.youtube1 }}')">
+                             <i class="fa fa-bookmark"></i> youtube1</button>
+                         {% endif %}
+
+                         {% if post.youtube2 %}
+                         <button type="button"
+                                 class="btn btn-default"
+                                 onclick="location.href='{{ post.youtube2 }}'">
+                             <i class="fa fa-bookmark"></i> youtube2</button>
+                         {% endif %}
+
+                         {% if post.unity %}
+                         <button type="button"
+                                 class="btn btn-default"
+                                 onclick="location.href='{{ post.unity }}'">
+                             <i class="fa fa-bookmark"></i> unity Asset </button>
+                         {% endif %}
+                         <!-- 추가된 내용 -->
+                         <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+ {% endfor %}
+

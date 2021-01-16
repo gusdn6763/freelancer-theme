@@ -1,0 +1,56 @@
+
+    <!-- Portfolio Grid Section -->
+    <section class="portfolio" id = "portfolio">
+        <div class="container portfolio-flex-grid">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Project</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="portfolio-flex-row">
+                {% assign post1 = site.categories.Portfolio  | sort:"date" %}
+                {% for post in post1 %}
+                <div class="portfolio-flex-item portfolio-item">
+                    <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="../img/portfolio_img/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
+                    </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Portfolio Grid Section -->
+    <section class="portfolio" id ="learning">
+        <div class="container portfolio-flex-grid">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Learning</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="portfolio-flex-row">
+                {% assign post2 = site.categories.Study  | sort:"order" %}
+                {% for post in post2 %}
+                <div class="portfolio-flex-item portfolio-item">
+                    <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="../img/learning_img/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
