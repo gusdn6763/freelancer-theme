@@ -1,0 +1,14 @@
+---
+layout: default
+modal-id: 6
+date: 2021-05-11
+size: hor
+img: Making.png
+alt: image-alt
+skills: C#, Unity
+project-date: 2021-05-24
+github: 
+category: TeamProject
+description: 작성중
+order: 1
+---
