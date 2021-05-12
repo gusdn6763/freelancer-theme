@@ -9,7 +9,7 @@ github: https://github.com/gusdn6763/SpaceShooter
 yes24: http://www.yes24.com/Product/Goods/60507941
 client: Start Bootstrap
 category: Study
-description: Solo Developing after SuperContact
+description: 6개월 유니티를 활용한 게임 프로그래밍 개발자 과정.
 order: 1
 
 ---
