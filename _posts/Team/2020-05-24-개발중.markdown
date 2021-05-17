@@ -1,0 +1,13 @@
+---
+layout: default
+modal-id: 8
+date: 2021-05-16
+size: hor
+img: making.png
+alt: image-alt
+skills: C#, Unity
+project-date: 2021-05-16
+category: TeamProject
+description : VR을 이용한 심시티 형태의 건설시뮬레이션 및 인공지능 구현, a알고리즘을 활용한 이동 자동차 이동 구현
+order: 1
+---
