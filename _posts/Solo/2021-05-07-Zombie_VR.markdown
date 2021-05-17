@@ -2,15 +2,15 @@
 layout: default
 modal-id: 7
 date: 2021-05-07
-slide: 4
-size: ver
-img: Making.png
-slide-img: The-Shleter
+slide: 5
+size: hor
+img: Zombie_VR1.png
+slide-img: Zombie_VR
 alt: image-alt
 skills: C#, Unity,XR-Toolkit
 project-date: 2021-05-07
 category: SoloProject
-youtube1 : https://youtu.be/RmSJSffVFe0 
+youtube1 : https://youtu.be/Rc_TdREHvJI
 github: https://github.com/gusdn6763/Zombie_VR
 description: VR 좀비 슈팅게임. <br> 난이도에 따라 몹의 스탯(데미지, 속도, 체력)이 향상됩니다.<br>총 3개의 스테이지가 있으며, 랜덤 위치에서 몹이 출현합니다.<br>부위별 피격, 등산, 소켓 및 무기별 상호작용등 공부한 여러 요소를 추가했습니다. <p>자세한 사항은 README.md 및 youtube 참조
 order: 
