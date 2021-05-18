@@ -9,7 +9,7 @@
                 </div>
             </div>
             <div class="portfolio-flex-row">
-                {% assign post1 = site.categories.TeamProject  | sort:"date" %}
+                {% assign post1 = site.categories.TeamProject  | sort:"order" %}
                 {% for post in post1 %}
                 <div class="portfolio-flex-item portfolio-item">
                     <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
@@ -36,7 +36,7 @@
                 </div>
             </div>
             <div class="portfolio-flex-row">
-                {% assign post2 = site.categories.SoloProject  | sort:"date" %}
+                {% assign post2 = site.categories.SoloProject  | sort:"order" %}
                 {% for post in post2 %}
                 <div class="portfolio-flex-item portfolio-item">
                     <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
