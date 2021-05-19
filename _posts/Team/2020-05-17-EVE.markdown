@@ -2,6 +2,8 @@
 layout: default
 modal-id: 6
 date: 2021-05-16
+slide: 5
+slide-img: EVE
 size: hor
 img: EVE.png
 alt: image-alt
