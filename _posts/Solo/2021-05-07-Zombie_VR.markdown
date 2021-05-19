@@ -12,6 +12,6 @@ project-date: 2021-05-07
 category: SoloProject
 youtube1 : https://youtu.be/Rc_TdREHvJI
 github: https://github.com/gusdn6763/Zombie_VR
-description: VR 좀비 슈팅게임. <br> 난이도에 따라 몹의 스탯(데미지, 속도, 체력)이 향상됩니다.<br>총 3개의 스테이지가 있으며, 랜덤 위치에서 몹이 출현합니다.<br>부위별 피격, 등산, 소켓 및 무기별 상호작용등 공부한 여러 요소를 추가했습니다.<br> youtube2에서는 공포감과 현실성을 높이기 위해 포스트 프로세싱과 그림자 적용, UI비활성화 및 밝기를 어둡게 만들었습니다. <p>자세한 사항은 README.md 및 youtube 참조
-order: 
+description: VR 좀비 슈팅게임. <br> 난이도에 따라 몹의 스탯(데미지, 속도, 체력)이 향상됩니다.<br>총 3개의 스테이지가 있으며, 랜덤 위치에서 몹이 출현합니다.<br>부위별 피격, 소켓 및 무기별 상호작용등 개별 학습한 여러 요소를 추가했습니다. <p>자세한 사항은 README.md 및 youtube 참조
+order: 2
 ---
