@@ -121,6 +121,11 @@
                          <img src="../img/SoloProject_Img/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
                          {% endif %}
                          <!-- 추가된 내용 -->
+                         {% if post.introduce %}
+                         <div class="introduce" >
+                         *{{ post.introduce }}
+                         </div>
+                         {% endif %}
                          {% if post.description %}
                          <p>{{ post.description }}</p>
                          {% endif %}
