@@ -57,7 +57,7 @@
                             {% if post.github %}
                             <button type="button"
                                     class="btn btn-default"
-                                    onclick="window.open('{{ post.github }}')">
+                                    onclick="location.href='{{ post.github }}'">
                                 <i class="fa fa-bookmark"></i> Github Storage</button>
                             {% endif %}
 
@@ -71,14 +71,14 @@
                             {% if post.youtube2 %}
                             <button type="button"
                                     class="btn btn-default"
-                                    onclick="window.open('{{ post.youtube2 }}')">
+                                    onclick="location.href='{{ post.youtube2 }}'">
                                 <i class="fa fa-bookmark"></i> youtube2</button>
                             {% endif %}
 
                             {% if post.unity %}
                             <button type="button"
                                     class="btn btn-default"
-                                    onclick="window.open('{{ post.unity }}')">
+                                    onclick="location.href='{{ post.unity }}'">
                                 <i class="fa fa-bookmark"></i> unity Asset </button>
                             {% endif %}
                             <!-- 추가된 내용 -->
@@ -92,7 +92,7 @@
 {% endfor %}
 
  {% for post in site.categories.SoloProject %}
- <div class="portfolio-modal modal fade" id= "portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+ <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
      <div class="modal-content">
          <div class="container">
              <div class="row">
@@ -153,7 +153,7 @@
                          {% if post.github %}
                          <button type="button"
                                  class="btn btn-default"
-                                 onclick="window.open('{{ post.github }}')">
+                                 onclick="location.href='{{ post.github }}'">
                              <i class="fa fa-bookmark"></i> Github Storage</button>
                          {% endif %}
 
@@ -167,14 +167,14 @@
                          {% if post.youtube2 %}
                          <button type="button"
                                  class="btn btn-default"
-                                 onclick="window.open('{{ post.youtube2 }}')">
+                                 onclick="location.href='{{ post.youtube2 }}'">
                              <i class="fa fa-bookmark"></i> youtube2</button>
                          {% endif %}
 
                          {% if post.unity %}
                          <button type="button"
                                  class="btn btn-default"
-                                 onclick="window.open('{{ post.unity }}')">
+                                 onclick="location.href='{{ post.unity }}'">
                              <i class="fa fa-bookmark"></i> unity Asset </button>
                          {% endif %}
                          <!-- 추가된 내용 -->
@@ -240,35 +240,35 @@
                          {% if post.github %}
                          <button type="button"
                                  class="btn btn-default"
-                                 onclick="window.open('{{ post.github }}')">
+                                 onclick="location.href='{{ post.github }}'">
                              <i class="fa fa-bookmark"></i> Github Storage</button>
                          {% endif %}
 
                          {% if post.youtube1 %}
                          <button type="button"
                                  class="btn btn-default"
-                                 onclick= "window.open('{{ post.youtube1 }})')">
+                                 onclick= "window.open('{{ post.youtube1 }}')">
                              <i class="fa fa-bookmark"></i> youtube1</button>
                          {% endif %}
 
                          {% if post.youtube2 %}
                          <button type="button"
                                  class="btn btn-default"
-                                 onclick="window.open('{{ post.youtube2 }}')">
+                                 onclick="location.href='{{ post.youtube2 }}'">
                              <i class="fa fa-bookmark"></i> youtube2</button>
                          {% endif %}
 
                          {% if post.unity %}
                          <button type="button"
                                  class="btn btn-default"
-                                 onclick="window.open('{{ post.unity }}')">
+                                 onclick="location.href='{{ post.unity }}'">
                              <i class="fa fa-bookmark"></i> unity Asset </button>
                          {% endif %}
 
                          {% if post.baekjoon %}
                          <button type="button"
                                  class="btn btn-default"
-                                 onclick="window.open('{{ post.baekjoon }}')">
+                                 onclick="location.href='{{ post.baekjoon }}'">
                              <i class="fa fa-bookmark"></i> baekjoon</button>
                          {% endif %}
                          <!-- 추가된 내용 -->
