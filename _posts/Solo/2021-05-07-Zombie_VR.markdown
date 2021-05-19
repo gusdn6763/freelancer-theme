@@ -4,8 +4,8 @@ modal-id: 7
 date: 2021-05-07
 slide: 5
 size: hor
-img: Zombie_VR1.png
 slide-img: Zombie_VR
+img: Zombie_VR1.png
 alt: image-alt
 skills: C#, Unity,XR-Toolkit
 project-date: 2021-05-07
