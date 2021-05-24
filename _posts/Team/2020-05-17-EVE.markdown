@@ -12,6 +12,6 @@ project-date: 2021-05-16
 github: https://github.com/gusdn6763/108
 youtube1 : https://youtu.be/h1uIGDPUQeY
 category: TeamProject
-description : 스타일전이를 활용해 시각적으로 감정을 표현한 프로젝트 <br> 총 4개의 층이 존재하며 각각 분노, 슬픔, 사랑, 슬픔을
+description : 스타일전이를 활용해 시각적으로 감정을 표현한 프로젝트
 order: 1
 ---
