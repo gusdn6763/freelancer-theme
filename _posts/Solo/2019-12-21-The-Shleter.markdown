@@ -12,6 +12,6 @@ project-date: 2019-11-04
 category: SoloProject
 youtube1 : https://youtu.be/QpzWTi1BRog
 github: https://github.com/gusdn6763/The-shelter
-description: 탑뷰 2D 슈팅 게임.<br> <br>일정범위를 클릭시 조이스틱이 나오며 플레이오를 조작합니다.<br> 플레이어는 맵에 있는 가장 가까이 있는 적을 공격합니다. <br>몹은 장애물을 피해 공격 가능한 범위까지 이동해 플레이어를 공격합니다. <br>지형과 장애물, 몹은 스테이지 레벨에 따라 랜덤으로 생성됩니다. <p>자세한 사항은 README.md 및 youtube 참조
+description: 탑뷰 2D 슈팅 게임.  <br> <br>일정 범위를 클릭시 조이스틱이 나타나며 플레이어를 조종합니다.  <br> 플레이어는 맵에 있는 가장 가까이 있는 적을 공격합니다. <br>몹은 공격 가능한 범위까지 장애물을 피해 이동하며 플레이어를 공격합니다. <br>지형과 장애물, 몹은 스테이지 레벨에 따라 랜덤으로 생성됩니다. <p>자세한 사항은 README.md 및 youtube 참조
 order: 4
 ---
