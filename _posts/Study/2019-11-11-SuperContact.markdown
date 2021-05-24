@@ -4,6 +4,7 @@ modal-id: 3
 date: 2019-11-11
 img: SuperContact1.png
 alt: image-alt
+size: ver
 slide: 4
 slide-img: SuperContact
 project-date: 2019-11-11

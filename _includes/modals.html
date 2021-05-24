@@ -190,7 +190,6 @@
  {% for post in site.categories.Study %}
  <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
      <div class="modal-content">
-
          <div class="container">
              <div class="row">
                  <div class="col-lg-8 col-lg-offset-2">
@@ -198,20 +197,30 @@
                          <h2>{{ post.title }}</h2>
                          <hr class="star-primary">
                          <!-- 추가된 내용 -->
-                         {%if post.slide %}
+
+                         {% if post.slide %}
+                         {% if post.size == "hor" %}
                          <div class="bxslider">
                              {% assign img_count = {{post.slide}} %}
                              {% for i in (1..img_count) %}
-                             {% if post.size == "hor" %}
-                             <div class="hor"><img src="../img/Study_Img/{{ post.slide-img }}{{i}}.png" alt="{{ post.alt }}"></div>
-                             {% else %}
-                             <div class="ver"><img src="../img/Study_Img/{{ post.slide-img }}{{i}}.png" alt="{{ post.alt }}"></div>
-                             {% endif %}
+                             <img src="../img/Study_Img/{{ post.slide-img }}{{i}}.png" alt="{{ post.alt }}">
                              {% endfor %}
                          </div>
                          {% else %}
+                         <div class="bxslider" id = "ver">
+                             {% assign img_count = {{post.slide}} %}
+                             {% for i in (1..img_count) %}
+                             <img src="../img/Study_Img/{{ post.slide-img }}{{i}}.png" alt="{{ post.alt }}">
+                             {% endfor %}
+                         </div>
+                         {% endif %}
+                         {% else %}
                          <img src="../img/Study_Img/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
                          {% endif %}
+
+
+
+
                          <!-- 추가된 내용 -->
                          {% if post.description %}
                          <p>{{ post.description }}</p>
